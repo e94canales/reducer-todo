@@ -3,7 +3,7 @@ import React from 'react'
 const Form = props => {
 
     return (
-        <div>
+        <div className='formContainer'>
             <form onSubmit={props.onTodoSubmit}>
                 <input 
                 name='todoForm'
@@ -12,7 +12,7 @@ const Form = props => {
                 placeholder='Add Todo'>
                 </input>
             </form>
-            <button onClick={props.onClearSubmit}>Clear</button>
+            <button onClick={props.onClearSubmit}>Clean</button>
         </div>
     )
 }
